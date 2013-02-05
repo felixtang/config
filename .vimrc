@@ -22,6 +22,14 @@ Bundle 'django.vim'
 Bundle 'javascript.vim'
 " 提供实时显示颜色的功能，如#FFFFFF
 Bundle 'css.vim'
+" coloscheme
+Bundle 'wombat256.vim'
+Bundle 'molokai'
+Bundle 'desertedocean.vim'
+
+" project
+Bundle 'taglist.vim'
+Bundle 'ctags.vim'
 
 filetype plugin indent on     " required!
 " or 
@@ -75,7 +83,7 @@ set whichwrap =b,s,<,>,[,]
 set colorcolumn=80
 
 "配色
-set t_Co=256
+color desertedocean
 set background=dark
 
 " 打开文件，返回上次光标位置
@@ -87,3 +95,15 @@ setlocal foldlevel=1
 let b:javascript_fold=1
 " 打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
+
+" 配置taglist
+let Tlist_Auto_Highlight_Tag=1
+let Tlist_Auto_Update=1
+let Tlist_Display_Tag_Scope=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Enable_Dold_Column=1
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_Show_One_File=1
+let Tlist_Use_SingleClick=1
+" 使用F5显示和关闭taglist
+nnoremap <silent> <F5> :TlistToggle<CR> 

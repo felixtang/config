@@ -9,6 +9,7 @@ echo $CURRENT_DIR
 ln -sif $CURRENT_DIR/.gitconfig $HOME/
 ln -sif $CURRENT_DIR/.jshintrc $HOME/
 ln -sif $CURRENT_DIR/.pylintrc $HOME/
+ln -sif $CURRENT_DIR/.zshrc $HOME/
 ln -sif $CURRENT_DIR/.tmux.conf $HOME/
 ln -sif $CURRENT_DIR/.vimrc $HOME/
 ln -sif $CURRENT_DIR/.bash_aliases $HOME/
